@@ -1,0 +1,14 @@
+<% provide(:title, "Home") %>
+<div class="center jumbotron">
+  <h1>Easy planning &<br> time management</h1>
+  <%# <p>This is the home page for the <a href="https://www.railstutorial.org/">Ruby on Rails Tutorial</a> sample application.</p> %>
+  <p>Please <%= link_to "login", signup_path%> your account and experience. 
+    <br>If you don't have an account, please sign up <%= link_to "sign up", signup_path%> below:
+  </p>
+  <p><%= link_to "sign up now!", signup_path, class: "btn btn-lg btn-primary" %></p>
+</div>
+<%= link_to image_tag("rails.svg", alt: "Rails logo", width: "200"),  "https://rubyonrails.org/" %>
+
+<%# <%= link_to image_tag("kitten.jpg", alt: "Kitten Img", width: "600"), "https://rubyonrails.org/" %>
+
+<%# <%= link_to image_tag("gd.jpg", width:"300")%> 
